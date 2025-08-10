@@ -65,7 +65,7 @@ const MainContent = () => {
 
         if (searchQuery) {
             filteredProducts = filteredProducts.filter(
-                product => product.title.toLowerCase().include(searchQuery.toLowerCase())
+                product => product.title.toString().toLowerCase().includes(searchQuery.toLowerCase())
             )
         }
 
