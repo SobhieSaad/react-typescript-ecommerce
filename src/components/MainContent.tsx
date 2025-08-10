@@ -65,7 +65,7 @@ const MainContent = () => {
 
         if (searchQuery) {
             filteredProducts = filteredProducts.filter(
-                product => product.title.toLocaleLowerCase().include(searchQuery.toLocaleLowerCase())
+                product => product.title.toLowerCase().include(searchQuery.toLowerCase())
             )
         }
 
@@ -132,7 +132,7 @@ const MainContent = () => {
                             {
                                 filter === 'all'
                                     ? 'Filter'
-                                    : filter.charAt(0).toLocaleLowerCase() + filter.slice(1)
+                                    : filter.charAt(0).toLowerCase() + filter.slice(1)
                             }
                         </button>
                         {
